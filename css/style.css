@@ -1089,7 +1089,7 @@ footer {
   #skills,
   #projects,
   #contact {
-    padding: 60px 25px 60px 25px;
+    padding: 35px 25px 60px 25px;
   }
   #skills .skills-content {
     grid-template-rows: repeat(3, minmax(140px, 1fr));
