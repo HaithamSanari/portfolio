@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Haitham Sanari</title>
+    <!-- ! website icon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    <!-- <link rel="icon" href="images/Group_1.svg"> -->
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +20,11 @@
       src="https://kit.fontawesome.com/2cc77d580a.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Dev Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
     <!-- CSS Reset -->
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- Main CSS File -->
@@ -33,7 +41,7 @@
     <header>
       <nav>
         <div class="logo">
-          <a href="#">logo</a>
+          <a href="#">HAITHAM</a>
         </div>
         <div class="nav-links">
           <ol>
@@ -46,14 +54,14 @@
             <a href="Resume.pdf" target="_blank">Resume</a>
           </div>
         </div>
-        <div class="menu">
+        <!-- <div class="menu">
           <div>
-            <button>
+            <button id="menu-btn">
               <div class="ham-box">
                 <div class="ham-box-inner"></div>
               </div>
             </button>
-            <aside>
+            <aside class="aside-toggle aside-hidden">
               <nav>
                 <div class="nav-links">
                   <ol>
@@ -67,6 +75,30 @@
               </nav>
             </aside>
           </div>
+        </div> -->
+        <div class="menu">
+          <label for="menu-control" class="hamburger">
+            <i class="hamburger__icon"></i>
+            <i class="hamburger__icon"></i>
+            <i class="hamburger__icon"></i>
+          </label>
+          
+          <input type="checkbox" id="menu-control" class="menu-control">
+          
+          <aside class="sidebar">
+            
+            <nav class="sidebar__menu">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Work</a>
+                <a href="#contact">Contact</a>
+              
+              <div class="main-btn resume-btn">
+                <a href="Resume.pdf" target="_blank">Resume</a>
+              </div>
+            </nav>
+            
+            <label for="menu-control" class="sidebar__close"></label>
         </div>
       </nav>
     </header>
@@ -80,34 +112,46 @@
             rel="noreferrer"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              role="img"
               viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-github"
             >
               <path
-                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
               />
               <title>GitHub</title>
-            </svg></a
-          >
+            </svg>
+          </a>
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/in/haitham-sanari-595205229/"
+            href="https://www.linkedin.com/in/haitham-sanari/"
             target="_blank"
             rel="noopener noreferrer"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              role="img"
               viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-linkedin"
             >
+              <title>LinkedIn</title>
               <path
-                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
-              />
-              <title>Linkedin</title>
-            </svg></a
-          >
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              ></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
         </li>
       </ul>
     </aside>
@@ -125,13 +169,17 @@
           </div>
           <h3 class="big-heading">I build things for the web.</h3>
           <p>
-            I’m a software engineer specializing in building (and occasionally
-            designing) exceptional digital experiences. Currently, I’m focused
-            on building accessible, human-centered products at Upstatement.
+            Full-Stack Engineer focused on creating interactive, accessible, and
+            responsive websites.
           </p>
           <div>
-            <a href="" class="main-btn">Click Me! </a>
+            <a href="#projects" class="main-btn call-to-action"
+              >See my Work!
+            </a>
           </div>
+        </div>
+        <div class="arrow-down">
+          <a href="#about"><i class="fa-solid fa-angles-down"></i></a>
         </div>
       </section>
       <section id="about">
@@ -142,16 +190,16 @@
             the internet.
           </p>
           <p>
-            I’m a BSc (Hons) Computer Science (Software Engineering) Graduate at
-            King Abdulaziz University. I am a fast learner and have good
-            problem-solving skills, which are imperative in a career in computer
-            science.
+            I’m a BSc (Hons) in Computer Science w/ minor in Software
+            Engineering Graduate from King Abdulaziz University. I am a fast
+            learner and have good problem-solving skills, which are imperative
+            in a career in computer science.
           </p>
           <p>
-            I believe I have a creative mind and an ability to analyze problems
-            carefully and sufficiently find solutions to problems. Therefore, I
-            have an understanding of the importance of being able to adapt to a
-            technological field that is changing daily.
+            I have a creative mind and an ability to analyze problems and find
+            solutions to problems. Thus, I have an understanding of the
+            importance of being able to adapt to a technological field that is
+            changing daily.
           </p>
         </div>
       </section>
@@ -160,54 +208,90 @@
         <div class="skills-content">
           <ul>
             <p>Front-End</p>
-            <li><i class="fa-brands fa-js"></i> JavaScript (ES6+)</li>
-            <li><i class="fa-brands fa-html5"></i> HTML</li>
-            <li><i class="fa-brands fa-css3"></i> CSS</li>
-            <li><i class="fa-brands fa-react"></i> React</li>
-            <li><i class="fa-brands fa-sass"></i> Sass</li>
-            <li><i class="fa-brands fa-bootstrap"></i> Bootstrap</li>
-          </ul>
-          <ul>
-            <p>Other Technology</p>
-            <li><i class="fa-brands fa-figma"></i> Figma</li>
-            <li><i class="fa-brands fa-git-alt"></i> Git</li>
-            <li><i class="fa-brands fa-github"></i> Github</li>
-            <li>
-              <svg
-                id="Layer_1"
-                data-name="Layer 1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 122.88 73.29"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #06b6d4;
-                      fill-rule: evenodd;
-                      width: 15px;
-                      height: 15px;
-                    }
-                  </style>
-                </defs>
-                <title>tailwind-css</title>
-                <path
-                  class="cls-1"
-                  d="M61.44,0Q36.87,0,30.72,24.43q9.22-12.21,21.5-9.16c4.68,1.16,8,4.53,11.72,8.26,6,6.08,13,13.11,28.22,13.11q24.57,0,30.72-24.43-9.21,12.22-21.5,9.16c-4.68-1.16-8-4.53-11.72-8.26C83.64,7,76.67,0,61.44,0ZM30.72,36.64Q6.15,36.64,0,61.07q9.23-12.21,21.5-9.16c4.68,1.16,8,4.53,11.72,8.27,6,6.07,13,13.11,28.22,13.11q24.57,0,30.72-24.43Q82.95,61.07,70.66,58c-4.68-1.16-8-4.53-11.72-8.26-6-6.08-13-13.12-28.22-13.12Z"
-                />
-              </svg>
-              Tailwind CSS
-            </li>
-            <li>Node.js</li>
-            <li>WordPress</li>
+            <li><i class="devicon-javascript-plain"></i>JavaScript (ES6+)</li>
+            <li><i class="devicon-html5-plain"></i>HTML5</li>
+            <li><i class="devicon-css3-plain"></i>CSS3</li>
+            <li><i class="devicon-react-original"></i>React</li>
+            <li><i class="devicon-redux-original"></i>Redux</li>
+            <li><i class="devicon-nextjs-original"></i>Next.js</li>
+            <li><i class="devicon-sass-original"></i>Sass</li>
+            <li><i class="devicon-bootstrap-plain"></i>Bootstrap</li>
+            <li><i class="devicon-tailwindcss-plain"></i>Tailwind CSS</li>
           </ul>
           <ul>
             <p>Back-End</p>
-            <li>JavaScript (ES6+)</li>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Eleventy</li>
-            <li>Node.js</li>
-            <li>WordPress</li>
+            <li><i class="devicon-nodejs-plain"></i>Nodejs</li>
+            <li><i class="devicon-express-original"></i>Express</li>
+            <li><i class="devicon-mongodb-plain"></i>MongoDB</li>
+            <!-- <li><i class="devicon-firebase-plain"></i>Firebase</li> -->
+            <li>
+              <svg
+                width="256px"
+                height="256px"
+                viewBox="0 -2 256 256"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                preserveAspectRatio="xMidYMid"
+              >
+                <g fill="#D6D6D6">
+                  <path
+                    d="M249.868148,1.42108547e-14 L81.6129672,1.42108547e-14 L81.6129672,84.3619834 L164.402564,84.3619834 C167.35201,84.3619834 169.744773,86.7547464 169.744773,89.7041929 L169.744773,171.351123 L255.210366,171.351123 L255.210366,5.3519758 C255.212951,3.93344238 254.651257,2.57212016 253.649118,1.56814827 C252.646978,0.56417638 251.286684,1.42108547e-14 249.868148,1.42108547e-14 Z"
+                  ></path>
+                  <path
+                    d="M81.6032009,0 L81.6032009,84.3619834 L2.67132424,84.3619834 C1.58669272,84.3600599 0.610497706,83.7036101 0.199569944,82.6998335 C-0.211357818,81.6960568 0.0242672254,80.5435101 0.796179436,79.7815516 L81.6032009,0 L81.6032009,0 Z M174.295906,251.220572 C173.527464,251.975341 172.381399,252.195816 171.387771,251.780027 C170.394142,251.364238 169.746654,250.393242 169.744773,249.316128 L169.744773,171.351123 L255.210357,171.351123 L174.295906,251.210806 L174.295906,251.220572 L174.295906,251.220572 Z"
+                    opacity="0.405"
+                  ></path>
+                  <path
+                    d="M81.6032009,84.3619834 L167.078552,84.3619834 C168.543508,84.3619834 169.744773,85.5534817 169.744773,87.028205 L169.744773,171.351123 L86.9551767,171.351123 C84.0047559,171.351123 81.6129672,168.959334 81.6129672,166.008913 L81.6129672,84.3619834 L81.6032009,84.3619834 L81.6032009,84.3619834 Z"
+                    fill-rule="nonzero"
+                    opacity="0.405"
+                  ></path>
+                </g>
+              </svg>
+              Strapi
+            </li>
+            <li><i class="devicon-php-plain"></i>PHP</li>
+            <li><i class="devicon-mysql-plain"></i>MySQL</li>
+          </ul>
+          <ul>
+            <p>Other Technology</p>
+            <li><i class="devicon-figma-plain"></i>Figma</li>
+            <li><i class="devicon-git-plain"></i>Git</li>
+            <li><i class="devicon-github-original"></i>Github</li>
+            <li><i class="devicon-vscode-plain"></i>VSCode</li>
+            <li><i class="devicon-jest-plain"></i>Jest</li>
+            <li><i class="fab fa-stripe"></i>Stripe</li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+                <path
+                  d="M49.012 51.774L42.514 32l17.008-12.22h-21.02L32.005 0h21.032l6.506 19.78c3.767 11.468-.118 24.52-10.53 31.993zm-34.023 0L31.998 64l17.015-12.226-17.008-12.22zm-10.516-32c-3.976 12.1.64 24.917 10.5 32.007v-.007L21.482 32 4.474 19.774l21.025.007L31.998 0H10.972z"
+                  fill="#D6D6D6"
+                />
+              </svg>
+              Auth0
+            </li>
+            <!-- <li><i class="devicon-gulp-plain"></i>Gulp</li> -->
+            <li>
+              <svg
+                width="256px"
+                height="168px"
+                viewBox="0 0 256 168"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid"
+              >
+                <title>Cloudinary</title>
+                <g>
+                  <path
+                    d="M75.0596066,75.2015741 C75.2469312,75.2015741 75.4264357,75.2766767 75.5579481,75.4100745 L99.11784,98.9911724 C99.312162,99.1909962 99.3693718,99.4870856 99.2634768,99.7449168 C99.1575819,100.002748 98.9087764,100.173152 98.6301014,100.17871 L92.6075908,100.17871 C92.2175275,100.178541 91.8980585,100.488614 91.886586,100.878508 L91.886586,153.893567 C91.8951363,157.249203 93.228951,160.465602 95.5976401,162.842508 L99.11784,166.362708 C99.312162,166.562532 99.3693718,166.858621 99.2634768,167.116453 C99.1575819,167.374284 98.9087764,167.544688 98.6301014,167.550246 L70.850211,167.550246 C63.823153,167.550246 58.126597,161.85369 58.126597,154.826632 L58.126597,100.878508 C58.126597,100.49202 57.8132864,100.17871 57.4267983,100.17871 L51.4891117,100.17871 C51.206586,100.181598 50.9500394,100.014307 50.8387412,99.7546117 C50.727443,99.494916 50.7832302,99.193768 50.9801672,98.9911724 L74.561265,75.4100745 C74.6927775,75.2766767 74.872282,75.2015741 75.0596066,75.2015741 Z M127.162806,88.858253 C127.35013,88.858253 127.529635,88.9333557 127.661147,89.0667535 L151.242245,112.563027 C151.439182,112.765623 151.494969,113.066771 151.383671,113.326467 C151.272373,113.586162 151.015826,113.753453 150.733301,113.750565 L144.71079,113.750565 C144.320895,113.762037 144.010822,114.081506 144.010991,114.471569 L144.010991,153.893567 C144.013904,157.246178 145.339923,160.462155 147.700839,162.842508 L151.242245,166.362708 C151.439182,166.565304 151.494969,166.866452 151.383671,167.126148 C151.272373,167.385843 151.015826,167.553134 150.733301,167.550318 L123.017028,167.550318 C115.98997,167.550318 110.293414,161.85369 110.293414,154.826632 L110.293414,114.513981 C110.293583,114.123918 109.98351,113.804449 109.593615,113.792977 L103.592311,113.792977 C103.313636,113.787419 103.06483,113.617015 102.958935,113.359184 C102.853041,113.101353 102.91025,112.805263 103.104572,112.605439 L126.664464,89.0667535 C126.795977,88.9333557 126.975481,88.858253 127.162806,88.858253 Z M179.276608,102.368202 C179.46049,102.368202 179.636499,102.442825 179.764346,102.57499 L203.345444,126.134882 C203.554993,126.332607 203.621947,126.638551 203.514139,126.905727 C203.406331,127.172903 203.145796,127.346703 202.857706,127.343625 L196.813989,127.343625 C196.427501,127.343625 196.11419,127.656936 196.11419,128.043424 L196.11419,153.893567 C196.122741,157.249203 197.456555,160.465602 199.825244,162.842508 L203.345444,166.362708 C203.539766,166.562532 203.596976,166.858621 203.491081,167.116453 C203.385186,167.374284 203.136381,167.544688 202.857706,167.550246 L175.056609,167.550246 C168.029551,167.550246 162.332995,161.85369 162.332995,154.826632 L162.332995,128.043424 C162.332995,127.656936 162.019685,127.343625 161.633197,127.343625 L155.69551,127.343625 C155.407419,127.346703 155.146884,127.172903 155.039076,126.905727 C154.931268,126.638551 154.998223,126.332607 155.207771,126.134882 L178.788869,102.57499 C178.916717,102.442825 179.092726,102.368202 179.276608,102.368202 Z M126.68567,-0.00129915197 C163.726151,0.268389097 196.395694,24.3213189 207.650267,59.6115872 C235.158643,63.2017038 255.798993,86.5397839 256,114.280715 C256,137.176238 241.681166,156.202364 218.562194,164.123471 L217.701922,164.411754 L216.641621,164.75105 L216.641621,147.658996 C231.337395,141.466837 239.968246,129.230962 239.968246,114.280715 C239.892985,93.1844419 223.185818,75.9583658 202.18869,75.1552304 L201.479314,75.1343962 L195.117507,75.1343962 L193.590674,69.0694736 C186.097302,38.1383418 158.510741,16.2789428 126.68567,16.0544154 C100.499457,15.9287075 76.5857868,30.808619 65.109824,54.2848457 L62.7495101,59.1450547 L58.2962452,59.6115872 C38.1836676,61.7631686 21.669169,76.4737678 17.2157913,96.2047716 C12.8260333,115.653904 21.1143737,135.731579 37.8623586,146.436102 L38.5958496,146.895579 L38.5958496,164.920699 L38.4898195,164.920699 L36.8993678,164.199694 C11.7447631,152.635559 -2.9896596,126.07915 0.511218289,98.6159526 C4.01209618,71.1527552 24.9376165,49.1421067 52.1889105,44.2584264 C66.9118072,16.8510474 95.5746387,-0.176942734 126.68567,-0.00129915197 Z"
+                    fill="#D6D6D6"
+                  ></path>
+                </g>
+              </svg>
+              Cloudinary
+            </li>
+            <li><i class="devicon-npm-original-wordmark"></i>npm</li>
           </ul>
         </div>
       </section>
@@ -218,23 +302,32 @@
             <div class="project-content">
               <div>
                 <p class="project-overline">Featured Project</p>
-                <h3 class="project-title"><a href="">Halcyon Theme</a></h3>
+                <h3 class="project-title">
+                  <a href="https://shock-nine.vercel.app/" target="_blank"
+                    >Shock.</a
+                  >
+                </h3>
                 <div class="project-description">
                   <p>
-                    A minimal, dark blue theme for VS Code, Sublime Text, Atom,
-                    iTerm, and more. Available on Visual Studio Marketplace,
-                    Package Control, Atom Package Manager, and npm.
+                    Developed a Full-stack E-Commerce Website with Next.js / React.
+                    Users can interact with products, see their order history, and more. Integrated stripe to accept payments and
+                    Integrated Auth0 for authentication.
                   </p>
                 </div>
                 <ul class="project-tech-list">
-                  <li>Hyper</li>
-                  <li>iTerm2</li>
-                  <li>Atom</li>
-                  <li>Text Sublime</li>
-                  <li>VS Code</li>
+                  <li>Next.js / React</li>
+                  <li>Styled Components</li>
+                  <li>Strapi</li>
+                  <li>GraphQL</li>
+                  <li>Auth0</li>
+                  <li>Stripe</li>
+                  <li>Cloudinary</li>
                 </ul>
                 <div class="project-links">
-                  <a href="#" role="button"
+                  <a
+                    href="https://github.com/HaithamSanari/Shock."
+                    target="_blank"
+                    role="button"
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
                       role="img"
@@ -252,7 +345,7 @@
                       ></path>
                     </svg>
                   </a>
-                  <a href="#"
+                  <a href="https://shock-nine.vercel.app/" target="_blank"
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
                       role="img"
@@ -276,9 +369,9 @@
               </div>
             </div>
             <div class="project-image">
-              <a href="#">
+              <a href="https://shock-nine.vercel.app/" target="_blank">
                 <div class="img">
-                  <img src="images/colorDesgin_2.jpg" alt="" />
+                  <img src="images/shock.jpg" alt="shock" />
                 </div>
               </a>
             </div>
@@ -287,23 +380,27 @@
             <div class="project-content">
               <div>
                 <p class="project-overline">Featured Project</p>
-                <h3 class="project-title"><a href="">Halcyon Theme</a></h3>
+                <h3 class="project-title">
+                  <a href="https://game-24h.netlify.app/" target="_blank"
+                    >GAME-24h</a
+                  >
+                </h3>
                 <div class="project-description">
                   <p>
-                    A minimal, dark blue theme for VS Code, Sublime Text, Atom,
-                    iTerm, and more. Available on Visual Studio Marketplace,
-                    Package Control, Atom Package Manager, and npm.
+                    Developed application using React while managing the state through Redux. Incorporated RAWG API calls to determine the upcoming, popular, and new games, and with the ability to search for games.
                   </p>
                 </div>
                 <ul class="project-tech-list">
-                  <li>Hyper</li>
-                  <li>iTerm2</li>
-                  <li>Atom</li>
-                  <li>Text Sublime</li>
-                  <li>VS Code</li>
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>Styled Components</li>
+                  <li>Framer Motion</li>
+                  <li>RAWG API</li>
                 </ul>
                 <div class="project-links">
-                  <a href="#"
+                  <a
+                    href="https://github.com/HaithamSanari/GAME-24h"
+                    target="_blank"
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
                       role="img"
@@ -321,7 +418,7 @@
                       ></path>
                     </svg>
                   </a>
-                  <a href="#"
+                  <a href="https://game-24h.netlify.app/" target="_blank"
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
                       role="img"
@@ -345,9 +442,9 @@
               </div>
             </div>
             <div class="project-image">
-              <a href="#">
+              <a href="https://game-24h.netlify.app/" target="_blank">
                 <div class="img">
-                  <img src="images/colorDesgin_2.jpg" alt="" />
+                  <img src="images/game-24h.jpg" alt="game-24h" />
                 </div>
               </a>
             </div>
@@ -356,23 +453,29 @@
             <div class="project-content">
               <div>
                 <p class="project-overline">Featured Project</p>
-                <h3 class="project-title"><a href="">Halcyon Theme</a></h3>
+                <h3 class="project-title">
+                  <a href="" target="_blank">Saudi Plan</a>
+                </h3>
                 <div class="project-description">
                   <p>
-                    A minimal, dark blue theme for VS Code, Sublime Text, Atom,
-                    iTerm, and more. Available on Visual Studio Marketplace,
-                    Package Control, Atom Package Manager, and npm.
+                    Developed user authentication and authorization with CRUD functionality.
+                    Allow partners to request and publish their packages and modify them as they wish.
+                    Allow the user to order a package with the ability to customize their packages.
                   </p>
                 </div>
                 <ul class="project-tech-list">
-                  <li>Hyper</li>
-                  <li>iTerm2</li>
-                  <li>Atom</li>
-                  <li>Text Sublime</li>
-                  <li>VS Code</li>
+                  <li>JavaScript</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Sass</li>
+                  <li>Bootstrap</li>
+                  <li>PHP</li>
+                  <li>MySQL</li>
                 </ul>
                 <div class="project-links">
-                  <a href="#"
+                  <a
+                    href="https://github.com/HaithamSanari/Saudi-Plan"
+                    target="_blank"
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
                       role="img"
@@ -390,7 +493,7 @@
                       ></path>
                     </svg>
                   </a>
-                  <a href="#"
+                  <a href="#" target="_blank"
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
                       role="img"
@@ -414,9 +517,9 @@
               </div>
             </div>
             <div class="project-image">
-              <a href="#">
+              <a href="#" target="_blank">
                 <div class="img">
-                  <img src="images/colorDesgin_2.jpg" alt="" />
+                  <img src="images/saudi-plan.jpg" alt="saudi-plan" />
                 </div>
               </a>
             </div>
@@ -435,24 +538,32 @@
           method="POST"
         >
           <div class="form-group">
+            <input
+              type="hidden"
+              name="_subject"
+              id="_subject"
+              value="New Portfolio Email!"
+            />
+            <input type="text" name="_honey" style="display: none" />
+            <input type="hidden" name="_captcha" value="false" />
             <div>
-              <label for="fName" class="">First Name <b>*</b></label>
+              <label for="fName">First Name <b>*</b></label>
               <input type="text" name="fName" id="fName" />
             </div>
             <div>
-              <label for="lName" class="">Last Name <b>*</b></label>
+              <label for="lName">Last Name <b>*</b></label>
               <input type="text" name="lName" id="lName" />
             </div>
             <div>
-              <label for="email" class="">Email <b>*</b></label>
+              <label for="email">Email <b>*</b></label>
               <input type="email" name="email" id="email" />
             </div>
             <div>
-              <label for="phone" class="">Phone</label>
+              <label for="phone">Phone</label>
               <input type="text" name="phone" id="phone" />
             </div>
             <div class="textarea">
-              <label for="message" class="">Message</label>
+              <label for="message">Message</label>
               <textarea
                 name="message"
                 id="message"
@@ -471,6 +582,65 @@
         </form>
       </section>
     </main>
+    <footer>
+      <aside class="icon-bar-phone">
+        <ul>
+          <li>
+            <a
+              href="https://github.com/HaithamSanari"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noreferrer"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-github"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                />
+                <title>GitHub</title>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/haitham-sanari/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-linkedin"
+              >
+                <title>LinkedIn</title>
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </footer>
     <script src="js/main.js" type="text/javascript" defer></script>
   </body>
 </html>
