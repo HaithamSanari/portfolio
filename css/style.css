@@ -659,7 +659,7 @@ h6 {
   position: absolute;
   margin: 0;
   transform: translateX(-50%);
-  bottom: 50px;
+  bottom: 2%;
   left: 50%;
   transition: var(--transition);
 }
@@ -698,6 +698,9 @@ h6 {
   margin: 20px 0px 0px;
   overflow: hidden;
   list-style: none;
+}
+#skills .skills-content ul {
+  display: grid;
 }
 #skills .skills-content ul p {
   padding: 10px 20px;
@@ -1074,7 +1077,7 @@ footer {
   .hamburger {
     z-index: 10;
   }
-  .sidebar{
+  .sidebar {
     padding: 0;
     right: -30px;
   }
@@ -1094,6 +1097,10 @@ footer {
   }
   .logo {
     margin-left: 25px;
+  }
+  #projects .project-description {
+    font-size: 1rem;
+    text-align: left;
   }
 }
 @media (max-width: 480px) and (min-height: 700px) {
