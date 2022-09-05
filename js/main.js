@@ -32,10 +32,8 @@ $(document).ready(function () {
         },
         success: function (data) {
           $('form').trigger('reset');
+          $('#loader').fadeOut(1);
           $('#success_message').fadeIn().html('Thank you for submitting', data);
-          setTimeout(function () {
-            $('#loader').fadeOut(1);
-          });
           setTimeout(function () {
             $('#success_message').fadeOut('Slow');
           }, 4000);
