@@ -18,6 +18,7 @@ $(document).ready(function () {
       $('#error_message').html('Write a valid e-mail address!');
     } else {
       $('#error_message').html('');
+      $('#loader').css('display', 'inline');
       $.ajax({
         url: 'https://formsubmit.co/ajax/haithamsanari@gmail.com',
         method: 'POST',
@@ -33,6 +34,9 @@ $(document).ready(function () {
           $('form').trigger('reset');
           $('#success_message').fadeIn().html('Thank you for submitting', data);
           setTimeout(function () {
+            $('#loader').fadeOut(1);
+          });
+          setTimeout(function () {
             $('#success_message').fadeOut('Slow');
           }, 4000);
         },
@@ -40,5 +44,3 @@ $(document).ready(function () {
     }
   });
 });
-
-
