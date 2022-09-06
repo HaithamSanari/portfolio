@@ -385,6 +385,7 @@ a:focus {
 .resume-btn {
   margin: 0;
   font-size: var(--fz-xxl);
+  color: var(--green)!important;
 }
 
 .sidebar__menu a {
