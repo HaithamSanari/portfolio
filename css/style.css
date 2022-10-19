@@ -1164,3 +1164,12 @@ footer {
     list-style: none;
   }
 }
+
+/* Comming soon */
+.comming-soon{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  color: black;
+}
