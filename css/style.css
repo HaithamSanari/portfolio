@@ -641,7 +641,7 @@ h6 {
 }
 #home h3 {
   margin: 0px;
-  font-size: clamp(40px, 8vw, 80px);
+  font-size: clamp(40px, 8vw, 60px);
   margin-top: 10px;
   color: var(--slate);
   line-height: 0.9;
